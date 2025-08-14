@@ -1,0 +1,191 @@
+
+.back{
+ width: 100%;
+background-color: white;
+background-position: center;
+   
+    position:static;
+}
+h1 {
+text-align: center;
+text-decoration: dashed;
+color: black;
+font-size: 50px;
+font-family: sans-serif;
+text-shadow: 0 0 62px rgb(209, 49, 94);
+ animation-name: h1;
+    animation-duration: 5s;
+  ;
+    animation-iteration-count: infinite;
+}
+@keyframes h1 {
+
+10%{
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+60% {
+ text-align: right;
+ color: white;
+
+}
+100% {
+   text-align: center;
+   background-color: black;
+   color: white;
+
+}
+
+
+}
+
+.flex_input {
+display:flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
+ justify-content: center;
+align-items: center;
+background-color:rgba(0, 0, 0, 0.742);
+animation-name: flex_input;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+height: 60vh;
+border-radius: 10%;
+
+
+}
+@keyframes flex_input
+{
+  50% {
+    background-color: black;
+    color: white;
+  }
+  100%{
+    background-color: rgba(0, 0, 0, 0.241);
+    color: black;
+  }
+}
+
+#str {
+     width: 60%;
+    height: 30px;
+    border: 3px;
+    background-color: #20a7a5ba;;
+   
+}
+
+
+
+.n1 {
+    
+  text-justify: auto;
+justify-content: center;
+font-size: 25px;
+padding: 10px;
+
+justify-content: space-evenly;
+ border-color: cadetblue;
+}
+#b1 {
+
+width: 59px;
+height: 30px;
+
+}
+#b1:hover{
+height:35px ;
+color: darkred;
+background-color: lightseagreen;
+
+}
+.mu{
+  justify-content: center;
+
+ position: relative;
+    display: inline-block;
+
+  
+}
+.fd {
+padding:12px 18px ;
+font-size: 26px;
+border-radius: 40%;
+text-align: end;
+background-color:#25bc85ad;
+border: none;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+.cont-t {
+
+display:none;
+background-color: rgba(255, 255, 255, 0.6);
+position: absolute;
+z-index: 1;
+min-width: 180px;
+
+}
+
+.cont-t span {
+
+display:flex;
+padding: 0px 16px;
+text-decoration: none;
+color:black;
+text-align: center;
+border-radius: 30% ;
+    border: 2px solid green ;
+    margin:auto;
+    
+
+}
+.cont-t:hover {
+
+background-color: white;
+}
+.mu:hover  .cont-t {
+
+display: block;
+
+}
+
+.pers {
+bottom: 0;
+padding: 20px ;
+border: 10px solid black;
+margin: 10px;
+height: 22vh;
+width: 92%;
+text-align: center;
+border-radius: 70px;
+color: rgb(33, 88, 197);
+font-style: italic;
+font-size:medium;
+
+ animation-name: pers;
+    animation-duration: 15s;
+    animation-iteration-count: infinite
+}
+
+@keyframes pers{
+  10%{
+   background-color: black;
+   transform: rotatey(360deg);
+  
+  }
+  50%{
+    background-color: #292629;
+    transform: rotatex(360deg);
+  }
+  
+}
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* إخفاء الشريط الجانبي على الهواتف */
+  }
+  .content {
+    width: 100%;
+  }
+}
